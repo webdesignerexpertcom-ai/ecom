@@ -2,6 +2,7 @@
 
 import connectDB from "./mongodb";
 import Product from "@/models/Product";
+import Config from "@/models/Config";
 import { revalidatePath } from "next/cache";
 
 export async function addProduct(formData: FormData) {

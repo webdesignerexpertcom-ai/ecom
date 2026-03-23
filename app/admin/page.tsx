@@ -41,7 +41,7 @@ export default async function AdminPage({ searchParams }: { searchParams: { edit
                   </Link>
                 )}
               </div>
-              <form action={editProduct ? updateProduct : addProduct} className="flex flex-col gap-4">
+              <form action={async (formData) => { "use server"; editProduct ? await updateProduct(formData) : await addProduct(formData); }} className="flex flex-col gap-4">
                 {editProduct && <input type="hidden" name="id" value={editProduct._id.toString()} />}
                 <div>
                   <label className="text-sm font-bold text-dark-brown/70">Product Name</label>
@@ -86,11 +86,12 @@ export default async function AdminPage({ searchParams }: { searchParams: { edit
             {/* Site Configuration */}
             <div className="rounded-2xl bg-white p-6 shadow-sm border border-cream">
               <h2 className="mb-6 text-xl font-bold text-dark-brown">Site Settings</h2>
-              <form action={updateConfig} className="flex flex-col gap-4">
+              <form action={async (formData) => { "use server"; await updateConfig(formData); }} className="flex flex-col gap-4">
                 <div>
                   <label className="text-sm font-bold text-dark-brown/70">WhatsApp Number</label>
                   <input name="whatsappNumber" defaultValue={dbConfig.whatsappNumber} required className="mt-1 w-full rounded-lg border border-cream bg-cream/10 p-2 text-sm focus:border-primary focus:outline-none" />
                 </div>
+
                 <div>
                   <label className="text-sm font-bold text-dark-brown/70">Hero Title</label>
                   <input name="heroTitle" defaultValue={dbConfig.heroTitle} required className="mt-1 w-full rounded-lg border border-cream bg-cream/10 p-2 text-sm focus:border-primary focus:outline-none" />
