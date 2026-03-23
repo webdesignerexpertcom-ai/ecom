@@ -1,0 +1,57 @@
+export const categories = [
+  { id: "mango", name: "Mango Pickles", icon: "🥭" },
+  { id: "chicken", name: "Chicken Pickles", icon: "🍗" },
+  { id: "prawn", name: "Prawn Pickles", icon: "🍤" },
+  { id: "veg", name: "Veg Pickles", icon: "🥦" },
+  { id: "masalas", name: "Masalas", icon: "🌶️" },
+];
+
+export const products = [
+  {
+    id: "1",
+    name: "Avakaya Mango Pickle",
+    price: 499,
+    weight: "500g",
+    image: "/mango_pickle_jar_premium.png",
+    description: "Our signature Andhra-style mango pickle made with hand-picked green mangoes and stone-ground spices.",
+    category: "mango",
+    isBestSeller: true,
+  },
+  {
+    id: "2",
+    name: "Spicy Chicken Pickle",
+    price: 699,
+    weight: "250g",
+    image: "/chicken_pickle_premium.png",
+    description: "Succulent pieces of marinated chicken slow-cooked in a rich spice blend. Perfect with hot rice.",
+    category: "chicken",
+    isBestSeller: true,
+  },
+  {
+    id: "3",
+    name: "Native Prawn Pickle",
+    price: 899,
+    weight: "250g",
+    image: "https://images.unsplash.com/photo-1565553642973-6afe791aee33?q=80&w=400&h=400&auto=format&fit=crop",
+    description: "Premium coastal prawns preserved in a traditional masala recipe. A seafood lover's delight.",
+    category: "prawn",
+  },
+  {
+    id: "4",
+    name: "Classic Ginger Pickle",
+    price: 349,
+    weight: "500g",
+    image: "https://images.unsplash.com/photo-1589113155008-01311029497e?q=80&w=400&h=400&auto=format&fit=crop",
+    description: "Tangy and sweet ginger pickle that aids digestion and pairs perfectly with breakfast items.",
+    category: "veg",
+  },
+  {
+    id: "5",
+    name: "Garam Masala (Stone-ground)",
+    price: 249,
+    weight: "100g",
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=400&h=400&auto=format&fit=crop",
+    description: "A secret blend of 12 aromatic spices, dry-roasted and stone-ground for maximum flavor retention.",
+    category: "masalas",
+  },
+];
