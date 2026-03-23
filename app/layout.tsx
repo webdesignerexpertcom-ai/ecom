@@ -20,7 +20,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  let whatsappNumber = "91XXXXXXXXXX";
+  let whatsappNumber = "919701121967";
   try {
     await connectDB();
     const config = await Config.findOne({});

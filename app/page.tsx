@@ -14,7 +14,7 @@ export default async function Home({ searchParams }: { searchParams: { category?
 
   let dbProducts = [];
   let config = {
-    whatsappNumber: "91XXXXXXXXXX",
+    whatsappNumber: "919701121967",
     heroTitle: "Authentic Homemade Pickles Delivered to Your Door",
     heroSubtitle: "Traditional recipes, no preservatives.",
   };
